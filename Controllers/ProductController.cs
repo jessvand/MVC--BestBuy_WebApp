@@ -55,7 +55,12 @@ namespace BestBuy_WebApp.Controllers
             return RedirectToAction("Index");
         }
 
-        
+        public IActionResult DeleteProduct(Product product)
+        {
+            _repository.DeleteProduct(product);
+            return RedirectToAction("Index");
+        }
+
 
     }
 }

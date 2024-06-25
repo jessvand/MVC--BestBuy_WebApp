@@ -17,6 +17,8 @@ namespace BestBuy_WebApp.Data
         public IEnumerable<Category> GetCategories();
         public Product AssignCategory();
 
+        public void DeleteProduct(Product product);
+
     }
 }
 
